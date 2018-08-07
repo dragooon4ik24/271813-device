@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Anton Shafner](https://up.htmlacademy.ru/htmlcss/22/user/271813).
-* Наставник: `Неизвестно`.
+* Наставник: [Лиза Позднякова](https://htmlacademy.ru/profile/lizzy).
 
 ---
 
