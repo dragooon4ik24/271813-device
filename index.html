@@ -50,7 +50,7 @@
            <p>01</p>
            <h3 class="goods__title">Делай селфи, как Бен Стиллер!</h3>
            <p class="goods__description">Самая длинная палка для селфи доступна а нашем магазине. Восемь(Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-           <span>Подробнее</span>
+           <span class="goods__detailed"><a href="#">Подробнее</a></span>
            <table class="goods__properties">
              <tr>
                <td>Длина палки</td>
@@ -69,7 +69,7 @@
            <p>02</p>
            <h3 class="goods__title">Худеем правильно!</h3>
            <p class="goods__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-           <span>Подробнее</span>
+           <span class="goods__detailed"><a href="#">Подробнее</a></span>
            <table class="goods__properties">
              <tr>
                <td>Без подзарядки</td>
@@ -84,7 +84,7 @@
            <p>03</p>
            <h3 class="goods__title">Порхает как бабочка, жалит как пчела!</h3>
            <p class="goods__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-           <span>Подробнее</span>
+           <span class="goods__detailed"><a href="#">Подробнее</a></span>
            <table class="goods__properties">
             <tr>
               <td>Дальность полета</td>
@@ -97,33 +97,32 @@
            </table>
          </li>
        </ul>
+       <div class="slide-controls">
+         <input type="radio" id="slide1"><label for="slide1"></label>
+         <input type="radio" id="slide2"><label for="slide2"></label>
+         <input type="radio" id="slide3"><label for="slide3"></label>
+       </div>
      </section>
 
      <section class="categories">
        <h2 class="visually-hidden">Категории товаров</h2>
        <ul class="categories__list">
          <li class="categories__item">
-           <img src="http://placehold.it/150x100" width="150" height="100" alt="Очки виртуальной реальности" class="categories__image">
            <p class="categories__name"><a href="#">Виртуальная реальность</a></p>
          </li>
          <li class="categories__item">
-           <img src="http://placehold.it/150x100" width="150" height="100" alt="Монопод для селфи" class="categories__image">
            <p class="categories__name"><a href="#">Монопод для селфи</a></p>
          </li>
          <li class="categories__item">
-           <img src="http://placehold.it/150x100" width="150" height="100" alt="Экшн-камера" class="categories__image">
            <p class="categories__name"><a href="#">Экшн-камера</a></p>
          </li>
          <li class="categories__item">
-           <img src="http://placehold.it/150x100" width="150" height="100" alt="Фитнес-браслет" class="categories__image">
            <p class="categories__name"><a href="#">Фитнес-браслет</a></p>
          </li>
          <li class="categories__item">
-           <img src="http://placehold.it/150x100" width="150" height="100" alt="Умные часы" class="categories__image">
            <p class="categories__name"><a href="#">Умные часы</a></p>
          </li>
          <li class="categories__item">
-           <img src="http://placehold.it/150x100" width="150" height="100" alt="Квадрокоптер" class="categories__image">
            <p class="categories__name"><a href="#">Квадрокоптер</a></p>
          </li>
        </ul>
@@ -131,19 +130,21 @@
 
      <section class="services">
        <h2 class="visually-hidden">Услуги</h2>
+       <div class="services__controls">
+           <input type="radio" id="delivery"><label for="delivery">Доставка</label>
+           <input type="radio" id="guarantee"><label for="guarantee">Гарантия</label>
+           <input type="radio" id="credit"><label for="credit">Кредит</label>
+       </div>
        <ul class="services__list">
          <li class="services__item">
-           <p class="services__name">Доставка</p>
            <h3 class="services__title">Доставка</h3>
            <p class="services__description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
          </li>
          <li class="services__item">
-           <p class="services__name">Гарантия</p>
            <h3 class="services__title">Гарантия</h3>
            <p class="services__description">Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
          </li>
          <li class="services__item">
-           <p class="services__name">Кредит</p>
            <h3 class="services__title">Кредит</h3>
            <p class="services__description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
          </li>
@@ -154,16 +155,16 @@
        <h2 class="visually-hidden">Бренды</h2>
        <ul class="brands__list">
          <li class="brands__item">
-          <img src="http://placehold.it/150x100" width="150" height="100" alt="DJL" class="brands__image">
+          <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="DJL" class="brands__image"></a>
         </li>
          <li class="brands__item">
-          <img src="http://placehold.it/150x100" width="150" height="100" alt="SP Gadgets" class="brands__image">
+          <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="SP Gadgets" class="brands__image"></a>
        </li>
          <li class="brands__item">
-          <img src="http://placehold.it/150x100" width="150" height="100" alt="GoPro" class="brands__image">
+          <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="GoPro" class="brands__image"></a>
        </li>
          <li class="brands__item">
-          <img src="http://placehold.it/150x100" width="150" height="100" alt="Vive" class="brands__image">
+          <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Vive" class="brands__image"></a>
        </li>
        </ul>
      </section>
@@ -183,9 +184,9 @@
 
        <div class="contacts">
          <h2 class="contacts__title">Контакты</h2>
-         <p class="contact__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+         <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
          <img src="http://placehold.it/150x100" width="150" height="100" alt="Карта с адресом: Москва, ул. Строителей, 15" class="contacts__map">
-         <button class="contacts__button">Напишите нам</button>
+         <a class="contacts__link">Напишите нам</a>
        </div>
      </section>
   </main>
@@ -206,9 +207,9 @@
     <div class="footer-information">
       <p class="footer-address">г. Москва, ул. Строителей, 15</p>
       <ul class="footer-services">
-        <li>Доставка</li>
-        <li>Гарантия</li>
-        <li>Контакты</li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Гарантия</a></li>
+        <li><a href="#">Контакты</a></li>
       </ul>
       <p class="footer-phone">Тел.: +7(495)495-95-95</p>
     </div>
