@@ -12,8 +12,9 @@
       <a class="page-header__logo">
         <p>Device</p>
       </a>
-      <!--здесь будет форма -->
-      <span class="form-search">Поиск по сайту</span>
+      <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
+        <input type="search" name="search" placeholder="Поиск по сайту">
+      </form>
       <ul class="user-navigation">
         <li class="user-navigation__login"><a href="#">Войти</a></li>
       </ul>
@@ -98,9 +99,9 @@
          </li>
        </ul>
        <div class="slide-controls">
-         <input type="radio" id="slide1"><label for="slide1"></label>
-         <input type="radio" id="slide2"><label for="slide2"></label>
-         <input type="radio" id="slide3"><label for="slide3"></label>
+         <input class="visually-hidden" type="radio" id="slide1" name="slides" checked>
+         <input class="visually-hidden" type="radio" id="slide2" name="slides">
+         <input class="visually-hidden" type="radio" id="slide3" name="slides">
        </div>
      </section>
 
@@ -131,9 +132,9 @@
      <section class="services">
        <h2 class="visually-hidden">Услуги</h2>
        <div class="services__controls">
-           <input type="radio" id="delivery"><label for="delivery">Доставка</label>
-           <input type="radio" id="guarantee"><label for="guarantee">Гарантия</label>
-           <input type="radio" id="credit"><label for="credit">Кредит</label>
+           <input type="radio" id="delivery" name="services" checked=""><label for="delivery">Доставка</label>
+           <input type="radio" id="guarantee" name="services"><label for="guarantee">Гарантия</label>
+           <input type="radio" id="credit" name="services"><label for="credit">Кредит</label>
        </div>
        <ul class="services__list">
          <li class="services__item">
@@ -226,14 +227,27 @@
   </footer>
 
   <div class="write-us">
-    <button class="write-us__close">Закрыть</button>
-    <!-- Здесь будет форма -->
-    <button class="write-us__submit">Оправить</button>
+    <button class="write-us__close" type="button">Закрыть</button>
+    <form class="write-us__form" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="user-name">Ваше имя:</label>
+        <input type="text" id="user-name" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="user-email">Ваш e-mail:</label>
+        <input type="email" id="user-email" name="email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="user-text">Текст письма:</label>
+        <textarea name="text" id="user-text" placeholder="В свободной форме"></textarea>
+      </p>
+    </form>
+    <button class="write-us__submit" type="submit">Оправить</button>
   </div>
 
   <div class="map-popup">
     <img src="img/map-big.jpg" width="960" height="559" alt="Карта с адресом: Москва, ул. Строителей, 15" class="map-popup__image">
-    <button class="map-popup__submit">Закрыть</button>
+    <button class="map-popup__close">Закрыть</button>
   </div>
 </body>
 
