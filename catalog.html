@@ -14,6 +14,7 @@
       </a>
       <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
         <input type="search" name="search" placeholder="Поиск по сайту">
+        <button class="form-search__submit" type="submit">Найти</button>
       </form>
       <ul class="user-navigation">
         <li class="user-navigation__profile"><a href="#">Валентин Петухов</a></li>
@@ -54,7 +55,20 @@
       <form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Стоимость</legend>
-          <input type="range">
+          <div class="filters__range range">
+            <input class="range__input visually-hidden" type="range" name="price" id="price-min">
+            <label class="range__lever" for="price-min"></label>
+
+            <input class="range__input visually-hidden" type="range" name="price" id="price-max">
+            <label class="range__lever" for="price-max"></label>
+
+            <div class="range__scale">
+              <div class="range__bar"></div>
+            </div>
+
+            <label class="range__label" for="price-min">от 0</label>
+            <label class="range__label" for="price-max">до 5000</label>
+          </div>
         </fieldset>
         <fieldset>
           <legend>Цвет</legend>
