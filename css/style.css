@@ -1,0 +1,534 @@
+@font-face {
+  font-family: 'gilroyextrabold';
+  src: url('../fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
+  url('../fonts/gilroy-extrabold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gilroylight';
+  src: url('../fonts/gilroy-light-webfont.woff2') format('woff2'),
+  url('../fonts/gilroy-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'gilroyextrabold', 'Arial', sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  background-color: #f7e296;
+}
+
+.page-header__logo,
+.footer-navigation__logo {
+  font-size: 48px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.page-header__logo:hover,
+.footer-navigation__logo:hover,
+input[type="search"]:hover,
+.user-navigation li:hover {
+  opacity: 0.6;
+}
+
+.page-header__logo:active,
+.footer-navigation__logo:active,
+.user-navigation li:active {
+  opacity: 0.3;
+}
+
+.form-search input[type="search"] {
+  font-family: 'gilroylight', 'Arial', sans-serif;
+
+  opacity: 0.3;
+  background-color: transparent;
+  border: none;
+}
+
+
+.form-search input[type="search"]:focus {
+  opacity: 1;
+}
+
+
+.form-search__submit {
+  display: none;
+}
+
+.user-navigation,
+.navigation-list,
+.catalog {
+  list-style: none;
+}
+
+.user-navigation li {
+  font-family: 'gilroylight', 'Arial', sans-serif;
+}
+
+.user-navigation a {
+  color: #000000;
+}
+
+.catalog li {
+  font-family: 'gilroylight', 'Arial', sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+
+
+.navigation-list__item a {
+  color: #000000;
+}
+
+.navigation-list__item {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.navigation-list__item a:hover {
+  opacity: 0.6;
+}
+
+.navigation-list__item a:active {
+  opacity: 0.3;
+}
+
+.catalog li {
+  line-height: 36px;
+}
+
+.goods {
+  list-style: none;
+}
+
+.goods__number {
+  font-size: 179px;
+  line-height: 179px;
+}
+
+.goods__title {
+  font-size: 47px;
+  line-height: 56px;
+}
+
+.goods__description {
+  font-family: 'gilroylight', 'Arial', sans-serif;
+}
+
+.table {
+  font-family: 'gilroylight', 'Arial', sans-serif;
+}
+
+.table__first-row {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.table__second-row {
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.button {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+
+  background-color: #ffffff;
+  border: none;
+}
+
+.button:hover {
+  background-color: #f0c52e;
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.categories__list {
+  list-style: none;
+}
+
+.categories__item {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.categories__item a {
+  color: #000000;
+}
+
+.categories__item a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.services {
+  background-color: #e5e5e5;
+}
+
+.services__controls label {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.services__controls label:hover {
+  background-color: #f0c52e;
+}
+
+.services__controls label:active {
+  color: #f7e184;
+  background-color: #000000;
+}
+
+.services__list {
+  list-style: none;
+}
+
+.services__title {
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.services__description {
+  font-family: 'gilroylight', 'Arial', sans-serif;
+}
+
+.brands__list {
+  list-style: none;
+}
+
+.brands__image {
+  filter: grayscale(1);
+  opacity: 0.2;
+}
+
+.brands__image:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+.about-us__title,
+.contacts__title {
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.about-us__text,
+.about-us__text-more,
+.contacts__text {
+  font-family: 'gilroylight', 'Arial', sans-serif;
+}
+
+.companies-list {
+  list-style: none;
+}
+
+
+.page-footer {
+  color: #ffffff;
+
+  background-color: #464646;
+}
+
+.footer-navigation__logo {
+  color: #ffc600;
+}
+
+.footer-navigation__list li{
+  font-family: 'gilroylight', 'Arial', sans-serif;
+  line-height: 36px;
+  list-style: none;
+  opacity: 0.7;
+}
+
+.footer-navigation__list li:hover {
+  opacity: 1;
+}
+
+.footer-navigation__list li:active {
+  opacity: 0.3;
+}
+
+.footer-navigation__list a,
+.footer-services a {
+  color: #ffffff;
+}
+
+.footer-navigation__logout a {
+  opacity: 0.3;
+}
+
+.footer-address {
+  font-family: 'gilroylight', 'Arial', sans-serif;
+}
+
+.footer-services {
+  list-style: none;
+}
+
+.footer-services li {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.footer-services li:hover {
+  opacity: 0.6;
+}
+
+.footer-services li:active {
+  opacity: 0.3;
+}
+
+.footer-phone {
+  font-family: 'gilroylight', 'Arial', sans-serif;
+  color: #ffffff;
+}
+
+.footer-links__socials {
+  list-style: none;
+}
+
+.map-popup__image {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.write-us__form label {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.write-us__form input[type="text"],
+.write-us__form input[type="email"],
+.write-us__form textarea {
+  font-family: 'gilroylight', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.write-us__form input[type="text"]:hover,
+.write-us__form input[type="email"]:hover,
+.write-us__form textarea:hover {
+  background-color: #eaeaea;
+}
+
+.write-us__form input[type="text"]:focus,
+.write-us__form input[type="email"]:focus,
+.write-us__form textarea:focus {
+  background-color: #ffffff;
+
+  border: 3px solid #f0c52e;
+}
+
+.write-us__form input[type="text"]:invalid,
+.write-us__form input[type="email"]:invalid {
+  background-color: #f6dada;
+}
+
+.page-main__title {
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-family: 'gilroylight', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:active {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.filters__title,
+.sort__title {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.filters__title {
+  background-color: #dcdcdc;
+}
+
+.filters__form {
+  background-color: #eeeeee;
+}
+
+.filters__form legend {
+ font-size: 18px;
+ line-height: 24px;
+}
+
+.filters__form fieldset {
+  border: none;
+}
+
+.range__label {
+  font-family: 'gilroylight', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  opacity: 0.2;
+}
+
+.filters__list-colors,
+.filters__list-bluetooth {
+  font-family: 'gilroylight', 'Arial', sans-serif;
+  font-size: 14px;
+  list-style: none;
+}
+
+.filters__list-colors input:disabled ~ label,
+ .filters__list-bluetooth input:disabled ~ label{
+  color: #a6a6a6;
+}
+
+.sort__list {
+  font-family: 'gilroylight', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  list-style: none;
+}
+
+.sort__list a {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.sort__list a:hover {
+  opacity: 0.6;
+}
+
+.sort__list a:active {
+  opacity: 1;
+}
+
+.sort__item--current a{
+  opacity: 1;
+}
+
+.sort__up-down {
+  list-style: none;
+}
+
+.sort__monopods-list {
+  list-style: none;
+}
+
+.monopod__link {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.monopod__price {
+  font-family: 'gilroylight', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.monopod__compare {
+  font-family: 'gilroylight', 'Arial', sans-serif;
+  font-size: 13px;
+  line-height: 36px;
+  opacity: 0.5;
+}
+
+.monopod__compare:hover {
+  opacity: 1;
+}
+
+.monopod__compare:active {
+  opacity: 0.2;
+}
+
+.pagination {
+  background-color: #ebebeb;
+}
+
+.pagination__back,
+.pagination__forward,
+.pagination__item a {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #000000;
+}
+
+.pagination__back:hover,
+.pagination__forward:hover {
+  background-color: #d9d9d9;
+}
+
+.pagination__back:active,
+.pagination__forward:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination__list {
+  list-style: none;
+}
+
+.pagination__item a {
+  opacity: 0.3;
+}
+
+.pagination__item--current a {
+  opacity: 1;
+}

@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Моноподы для селфи</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
     <nav class="main-navigation">
-      <a class="page-header__logo" href="index.html">
-        <p>Device</p>
-      </a>
+      <a class="page-header__logo" href="index.html">Device</a>
       <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
         <input type="search" name="search" placeholder="Поиск по сайту">
         <button class="form-search__submit" type="submit">Найти</button>
@@ -25,7 +25,7 @@
         <li class="user-navigation__basket"><a href="#">Корзина</a></li>
       </ul>
       <ul class="navigation-list">
-        <li class="navigation-list__catalog"><a href="#">Каталог товаров</a>
+        <li class="navigation-list__catalog navigation-list__item"><a href="#">Каталог товаров</a>
           <ul class="catalog">
             <li><a href="#">Виртуальная реальность</a></li>
             <li><a href="#">Моноподы для селфи</a></li>
@@ -35,9 +35,9 @@
             <li><a href="#">Квадрокоптеры</a></li>
           </ul>
         </li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li class="navigation-list__item"><a href="#">Доставка</a></li>
+        <li class="navigation-list__item"><a href="#">Гарантия</a></li>
+        <li class="navigation-list__item"><a href="#">Контакты</a></li>
       </ul>
     </nav>
   </header>
@@ -131,61 +131,61 @@
         <li><a href="#">Вниз</a></li>
       </ul>
 
-      <ul class="monopods-list">
-        <li class="monopod-item monopod">
+      <ul class="sort__monopods-list monopods">
+        <li class="monopods__item monopod">
           <figure>
             <img src="img/img-amateur-selfie-stick.jpg" width="360" height="380" alt="" class="monopod__image">
             <figcaption class="monopod__description">
               <a href="#" class="monopod__link">Любительская селфи-палка</a>
-              <b class="monopod__price">500 руб.</b>
+              <p class="monopod__price">500 руб.</p>
             </figcaption>
           </figure>
           <div class="monopod__hover">
-                <a href="#" class="monopod__basket">В корзину</a>
+                <a href="#" class="monopod__basket button">В корзину</a>
                 <a href="#" class="monopod__compare">Добавить к сравнению</a>
             </div>
         </li>
-        <li class="monopod-item monopod">
+        <li class="monopods__item monopod">
           <figure>
             <img src="img/img-prof-selfie-stick.jpg" width="360" height="380" alt="" class="monopod__image">
             <figcaption class="monopod__description">
               <a href="#" class="monopod__link">Профессиональная селфи-палка</a>
-              <b class="monopod__price">1 500 руб.</b>
+              <p class="monopod__price">1 500 руб.</p>
             </figcaption>
           </figure>
           <div class="monopod__hover">
-                <a href="#" class="monopod__basket">В корзину</a>
+                <a href="#" class="monopod__basket button">В корзину</a>
                 <a href="#" class="monopod__compare">Добавить к сравнению</a>
             </div>
         </li>
-        <li class="monopod-item monopod">
+        <li class="monopods__item monopod">
           <figure>
             <img src="img/img-unsinkable-selfie-stick.jpg" width="360" height="380" alt="" class="monopod__image">
             <figcaption class="monopod__description">
               <a href="#" class="monopod__link">Непотопляемая селфи-палка</a>
-              <b class="monopod__price">2 500 руб.</b>
+              <p class="monopod__price">2 500 руб.</p>
             </figcaption>
           </figure>
           <div class="monopod__hover">
-                <a href="#" class="monopod__basket">В корзину</a>
+                <a href="#" class="monopod__basket button">В корзину</a>
                 <a href="#" class="monopod__compare">Добавить к сравнению</a>
             </div>
         </li>
-        <li class="monopod-item monopod">
+        <li class="monopods__item monopod">
           <figure>
             <img src="img/img-hand-selfie-stick.jpg" width="360" height="380" alt="" class="monopod__image">
             <figcaption class="monopod__description">
               <a href="#" class="monopod__link">Селфи-палка "Следуй за мной"</a>
-              <b class="monopod__price">4 900 руб.</b>
+              <p class="monopod__price">4 900 руб.</p>
             </figcaption>
           </figure>
           <div class="monopod__hover">
-                <a href="#" class="monopod__basket">В корзину</a>
+                <a href="#" class="monopod__basket button">В корзину</a>
                 <a href="#" class="monopod__compare">Добавить к сравнению</a>
             </div>
         </li>
       </ul>
-      <div class="pagination"><a href="#"></a>
+      <div class="pagination">
         <a href="#" class="pagination__back">Назад</a>
         <ul class="pagination__list">
           <li class="pagination__item pagination__item--current"><a>1</a></li>
@@ -202,11 +202,11 @@
       <a class="footer-navigation__logo" href="index.html">
         <p>Device</p>
       </a>
-      <ul class="footer-navigation">
+      <ul class="footer-navigation__list">
         <li class="footer-navigation__profile"><a href="#">Валентин Петухов</a></li>
         <li class="footer-navigation__logout"><a href="#">Выйти</a></li>
       </ul>
-      <ul class="footer-navigation footer-navigation--extra">
+      <ul class="footer-navigation__list footer-navigation__list--extra">
         <li class="footer-navigation__compare"><a href="#">Сравнить</a></li>
         <li class="footer-navigation__basket"><a href="#">Корзина</a></li>
       </ul>
