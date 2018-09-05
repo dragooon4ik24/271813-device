@@ -13,7 +13,7 @@
     <nav class="main-navigation">
       <a class="page-header__logo">Device</a>
       <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
-        <input type="search" name="search" placeholder="Поиск по сайту">
+        <input class="form-search__input" type="search" name="search" placeholder="Поиск по сайту">
         <button class="form-search__submit" type="submit">Найти</button>
       </form>
       <ul class="user-navigation">
@@ -230,15 +230,15 @@
     <form class="write-us__form" action="https://echo.htmlacademy.ru" method="post">
       <p>
         <label for="user-name">Ваше имя:</label>
-        <input type="text" id="user-name" name="name" placeholder="Имя Фамилия">
+        <input class="write-us__name" type="text" id="user-name" name="name" placeholder="Имя Фамилия">
       </p>
       <p>
         <label for="user-email">Ваш e-mail:</label>
-        <input type="email" id="user-email" name="email" placeholder="email@example.com">
+        <input class="write-us__email" type="email" id="user-email" name="email" placeholder="email@example.com">
       </p>
       <p>
         <label for="user-text">Текст письма:</label>
-        <textarea name="text" id="user-text" placeholder="В свободной форме"></textarea>
+        <textarea class="write-us__text" name="text" id="user-text" placeholder="В свободной форме"></textarea>
       </p>
       <button class="write-us__submit button" type="submit">Оправить</button>
     </form>

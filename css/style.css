@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'gilroyextrabold';
+  font-family: 'Gilroy';
   src: url('../fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
   url('../fonts/gilroy-extrabold-webfont.woff') format('woff');
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'gilroylight';
+  font-family: 'Gilroy';
   src: url('../fonts/gilroy-light-webfont.woff2') format('woff2'),
   url('../fonts/gilroy-light-webfont.woff') format('woff');
   font-weight: normal;
@@ -32,8 +32,9 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: 'gilroyextrabold', 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 15px;
+  font-weight: bold;
   line-height: 30px;
 }
 
@@ -55,7 +56,7 @@ a {
 
 .page-header__logo:hover,
 .footer-navigation__logo:hover,
-input[type="search"]:hover,
+.form-search__input:hover,
 .user-navigation li:hover {
   opacity: 0.6;
 }
@@ -66,8 +67,8 @@ input[type="search"]:hover,
   opacity: 0.3;
 }
 
-.form-search input[type="search"] {
-  font-family: 'gilroylight', 'Arial', sans-serif;
+.form-search__input {
+  font-weight: normal;
 
   opacity: 0.3;
   background-color: transparent;
@@ -75,7 +76,7 @@ input[type="search"]:hover,
 }
 
 
-.form-search input[type="search"]:focus {
+.form-search__input:focus {
   opacity: 1;
 }
 
@@ -91,7 +92,7 @@ input[type="search"]:hover,
 }
 
 .user-navigation li {
-  font-family: 'gilroylight', 'Arial', sans-serif;
+  font-weight: normal;
 }
 
 .user-navigation a {
@@ -99,7 +100,7 @@ input[type="search"]:hover,
 }
 
 .catalog li {
-  font-family: 'gilroylight', 'Arial', sans-serif;
+  font-weight: normal;
   font-size: 15px;
   line-height: 36px;
   text-transform: none;
@@ -146,11 +147,11 @@ input[type="search"]:hover,
 }
 
 .goods__description {
-  font-family: 'gilroylight', 'Arial', sans-serif;
+  font-weight: normal;
 }
 
 .table {
-  font-family: 'gilroylight', 'Arial', sans-serif;
+  font-weight: normal;
 }
 
 .table__first-row {
@@ -231,7 +232,7 @@ input[type="search"]:hover,
 }
 
 .services__description {
-  font-family: 'gilroylight', 'Arial', sans-serif;
+  font-weight: normal;
 }
 
 .brands__list {
@@ -257,7 +258,7 @@ input[type="search"]:hover,
 .about-us__text,
 .about-us__text-more,
 .contacts__text {
-  font-family: 'gilroylight', 'Arial', sans-serif;
+  font-weight: normal;
 }
 
 .companies-list {
@@ -276,7 +277,7 @@ input[type="search"]:hover,
 }
 
 .footer-navigation__list li{
-  font-family: 'gilroylight', 'Arial', sans-serif;
+  font-weight: normal;
   line-height: 36px;
   list-style: none;
   opacity: 0.7;
@@ -300,7 +301,7 @@ input[type="search"]:hover,
 }
 
 .footer-address {
-  font-family: 'gilroylight', 'Arial', sans-serif;
+  font-weight: normal;
 }
 
 .footer-services {
@@ -323,7 +324,7 @@ input[type="search"]:hover,
 }
 
 .footer-phone {
-  font-family: 'gilroylight', 'Arial', sans-serif;
+  font-weight: normal;
   color: #ffffff;
 }
 
@@ -340,10 +341,10 @@ input[type="search"]:hover,
   line-height: 24px;
 }
 
-.write-us__form input[type="text"],
-.write-us__form input[type="email"],
-.write-us__form textarea {
-  font-family: 'gilroylight', 'Arial', sans-serif;
+.write-us__name,
+.write-us__email,
+.write-us__text {
+  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
 
@@ -351,22 +352,22 @@ input[type="search"]:hover,
   border: none;
 }
 
-.write-us__form input[type="text"]:hover,
-.write-us__form input[type="email"]:hover,
-.write-us__form textarea:hover {
+.write-us__name:hover,
+.write-us__email:hover,
+.write-us__text:hover {
   background-color: #eaeaea;
 }
 
-.write-us__form input[type="text"]:focus,
-.write-us__form input[type="email"]:focus,
-.write-us__form textarea:focus {
+.write-us__name:focus,
+.write-us__email:focus,
+.write-us__text:focus {
   background-color: #ffffff;
 
   border: 3px solid #f0c52e;
 }
 
-.write-us__form input[type="text"]:invalid,
-.write-us__form input[type="email"]:invalid {
+.write-us__name:invalid,
+.write-us__email:invalid {
   background-color: #f6dada;
 }
 
@@ -380,7 +381,7 @@ input[type="search"]:hover,
 }
 
 .breadcrumbs a {
-  font-family: 'gilroylight', 'Arial', sans-serif;
+  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.3);
@@ -420,7 +421,7 @@ input[type="search"]:hover,
 }
 
 .range__label {
-  font-family: 'gilroylight', 'Arial', sans-serif;
+  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   opacity: 0.2;
@@ -428,7 +429,7 @@ input[type="search"]:hover,
 
 .filters__list-colors,
 .filters__list-bluetooth {
-  font-family: 'gilroylight', 'Arial', sans-serif;
+  font-weight: normal;
   font-size: 14px;
   list-style: none;
 }
@@ -439,7 +440,7 @@ input[type="search"]:hover,
 }
 
 .sort__list {
-  font-family: 'gilroylight', 'Arial', sans-serif;
+  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   list-style: none;
@@ -477,13 +478,13 @@ input[type="search"]:hover,
 }
 
 .monopod__price {
-  font-family: 'gilroylight', 'Arial', sans-serif;
+  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
 }
 
 .monopod__compare {
-  font-family: 'gilroylight', 'Arial', sans-serif;
+  font-weight: normal;
   font-size: 13px;
   line-height: 36px;
   opacity: 0.5;
