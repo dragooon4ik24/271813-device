@@ -239,14 +239,8 @@ a {
   list-style: none;
 }
 
-.brands__image {
-  filter: grayscale(1);
-  opacity: 0.2;
-}
-
-.brands__image:hover {
-  filter: grayscale(0);
-  opacity: 1;
+.brands__link:hover .brands__image {
+  filter: none;
 }
 
 .about-us__title,
@@ -533,3 +527,4 @@ a {
 .pagination__item--current a {
   opacity: 1;
 }
+
