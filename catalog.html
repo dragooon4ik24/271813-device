@@ -44,163 +44,173 @@
     </nav>
   </header>
 
-  <main class="page-main container">
-    <h1 class="page-main__title">Моноподы для селфи</h1>
-    <ul class="breadcrumbs">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="#">Каталог товаров</a></li>
-      <li><a>Моноподы для селфи</a></li>
-    </ul>
+  <main class="page-main">
+    <div class="container">
+      <h1 class="page-main__title">Моноподы для селфи</h1>
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="#">Каталог товаров</a></li>
+        <li><a>Моноподы для селфи</a></li>
+      </ul>
+    </div>
 
     <div class="page-main__wrapper">
-      <section class="filters">
-        <h2 class="filters__title">Фильтр:</h2>
-        <form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
-            <legend>Стоимость</legend>
-            <div class="filters__range range">
-              <input class="range__input visually-hidden" type="range" name="price" id="price-min">
-              <label class="range__lever" for="price-min"></label>
+        <section class="catalog-page">
 
-              <input class="range__input visually-hidden" type="range" name="price" id="price-max">
-              <label class="range__lever" for="price-max"></label>
+          <header class="catalog-page__header">
+            <h2 class="filter">Фильтр:</h2>
+            <div class="sort">
+              <h2 class="sort__title">Сортировка:</h2>
 
-              <div class="range__scale">
-                <div class="range__bar"></div>
-              </div>
-
-              <label class="range__label" for="price-min">от 0</label>
-              <label class="range__label" for="price-max">до 5000</label>
+              <ul class="sort__list">
+                <li class="sort__item sort__item--current">
+                  <a href="#">По цене</a>
+                </li>
+                <li class="sort__item">
+                  <a href="#">По типу</a>
+                </li>
+                <li class="sort__item">
+                  <a href="#">По популярности</a>
+                </li>
+              </ul>
+              <ul class="sort__up-down">
+                <li><a href="#">Вверх</a></li>
+                <li><a href="#">Вниз</a></li>
+              </ul>
             </div>
-          </fieldset>
-          <fieldset>
-            <legend>Цвет</legend>
-            <ul class="filters__list-colors">
-              <li>
-                <input class="visually-hidden" type="checkbox" name="black" id="color-black" checked>
-                <label for="color-black">Черный</label>
-              </li>
-              <li>
-                <input class="visually-hidden" type="checkbox" name="white" id="color-white">
-                <label for="color-white">Белый</label>
-              </li>
-              <li>
-                <input class="visually-hidden" type="checkbox" name="blue" id="color-blue" checked>
-                <label for="color-blue">Синий</label>
-              </li>
-              <li>
-                <input class="visually-hidden" type="checkbox" name="red" id="color-red" checked>
-                <label for="color-red">Красный</label>
-              </li>
-              <li>
-                <input class="visually-hidden" type="checkbox" name="pink" id="color-pink">
-                <label for="color-pink">Розовый</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Bluetooth</legend>
-            <ul class="filters__list-bluetooth">
-              <li>
-                <input class="visually-hidden" type="radio" name="bluetooth" value="have-bluetooth" id="bluetooth-on">
-                <label for="bluetooth-on">Есть</label>
-              </li>
-              <li>
-                <input class="visually-hidden" type="radio" name="bluetooth" value="have-no-bluetooth" id="bluetooth-off">
-                <label for="bluetooth-off">Нет</label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="filters__submit button" type="submit">Показать</button>
-        </form>
-      </section>
+          </header>
 
-      <section class="sort">
-        <div class="sort__wrapper">
-          <h2 class="sort__title">Сортировка:</h2>
+          <div class="catalog-page__body">
+            <div class="catalog-page__wrapper">
+              <aside class="filters">
+                <form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
+                  <fieldset>
+                    <legend>Стоимость</legend>
+                    <div class="filters__range range">
+                      <input class="range__input visually-hidden" type="range" name="price" id="price-min">
+                      <label class="range__lever" for="price-min"></label>
 
-          <ul class="sort__list">
-            <li class="sort__item sort__item--current">
-              <a href="#">По цене</a>
-            </li>
-            <li class="sort__item">
-              <a href="#">По типу</a>
-            </li>
-            <li class="sort__item">
-              <a href="#">По популярности</a>
-            </li>
-          </ul>
-          <ul class="sort__up-down">
-            <li><a href="#">Вверх</a></li>
-            <li><a href="#">Вниз</a></li>
-          </ul>
+                      <input class="range__input visually-hidden" type="range" name="price" id="price-max">
+                      <label class="range__lever" for="price-max"></label>
+
+                      <div class="range__scale">
+                        <div class="range__bar"></div>
+                      </div>
+
+                      <label class="range__label" for="price-min">от 0</label>
+                      <label class="range__label" for="price-max">до 5000</label>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Цвет</legend>
+                    <ul class="filters__list-colors">
+                      <li>
+                        <input class="visually-hidden" type="checkbox" name="black" id="color-black" checked>
+                        <label for="color-black">Черный</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden" type="checkbox" name="white" id="color-white">
+                        <label for="color-white">Белый</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden" type="checkbox" name="blue" id="color-blue" checked>
+                        <label for="color-blue">Синий</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden" type="checkbox" name="red" id="color-red" checked>
+                        <label for="color-red">Красный</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden" type="checkbox" name="pink" id="color-pink">
+                        <label for="color-pink">Розовый</label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Bluetooth</legend>
+                    <ul class="filters__list-bluetooth">
+                      <li>
+                        <input class="visually-hidden" type="radio" name="bluetooth" value="have-bluetooth" id="bluetooth-on">
+                        <label for="bluetooth-on">Есть</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden" type="radio" name="bluetooth" value="have-no-bluetooth" id="bluetooth-off">
+                        <label for="bluetooth-off">Нет</label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <button class="filters__submit button" type="submit">Показать</button>
+                </form>
+              </aside>
+
+                        <div class="catalog-page__monopods monopods">
+              <ul class="monopods__list">
+                <li class="monopods__item monopod">
+                  <figure class="monopod__figure">
+                    <img src="img/img-amateur-selfie-stick.jpg" width="360" height="380" alt="" class="monopod__image">
+                    <figcaption class="monopod__description">
+                      <a href="#" class="monopod__link">Любительская селфи-палка</a>
+                      <p class="monopod__price">500 руб.</p>
+                    </figcaption>
+                  </figure>
+                  <div class="monopod__hover">
+                        <a href="#" class="monopod__basket button">В корзину</a>
+                        <a href="#" class="monopod__compare">Добавить к сравнению</a>
+                    </div>
+                </li>
+                <li class="monopods__item monopod">
+                  <figure class="monopod__figure">
+                    <img src="img/img-prof-selfie-stick.jpg" width="360" height="380" alt="" class="monopod__image">
+                    <figcaption class="monopod__description">
+                      <a href="#" class="monopod__link">Профессиональная селфи-палка</a>
+                      <p class="monopod__price">1 500 руб.</p>
+                    </figcaption>
+                  </figure>
+                  <div class="monopod__hover">
+                        <a href="#" class="monopod__basket button">В корзину</a>
+                        <a href="#" class="monopod__compare">Добавить к сравнению</a>
+                    </div>
+                </li>
+                <li class="monopods__item monopod">
+                  <figure class="monopod__figure">
+                    <img src="img/img-unsinkable-selfie-stick.jpg" width="360" height="380" alt="" class="monopod__image">
+                    <figcaption class="monopod__description">
+                      <a href="#" class="monopod__link">Непотопляемая селфи-палка</a>
+                      <p class="monopod__price">2 500 руб.</p>
+                    </figcaption>
+                  </figure>
+                  <div class="monopod__hover">
+                        <a href="#" class="monopod__basket button">В корзину</a>
+                        <a href="#" class="monopod__compare">Добавить к сравнению</a>
+                    </div>
+                </li>
+                <li class="monopods__item monopod">
+                  <figure class="monopod__figure">
+                    <img src="img/img-hand-selfie-stick.jpg" width="360" height="380" alt="" class="monopod__image">
+                    <figcaption class="monopod__description">
+                      <a href="#" class="monopod__link">Селфи-палка "Следуй за мной"</a>
+                      <p class="monopod__price">4 900 руб.</p>
+                    </figcaption>
+                  </figure>
+                  <div class="monopod__hover">
+                        <a href="#" class="monopod__basket button">В корзину</a>
+                        <a href="#" class="monopod__compare">Добавить к сравнению</a>
+                    </div>
+                </li>
+              </ul>
+              <div class="monopods__pagination pagination">
+                <a href="#" class="pagination__back">Назад</a>
+                <ul class="pagination__list">
+                  <li class="pagination__item pagination__item--current"><a>1</a></li>
+                  <li class="pagination__item"><a href="#">2</a></li>
+                  <li class="pagination__item"><a href="#">3</a></li>
+                </ul>
+                <a href="#" class="pagination__forward">Вперед</a>
+              </div>
+            </div>
         </div>
-
-        <ul class="sort__monopods-list monopods">
-          <li class="monopods__item monopod">
-            <figure class="monopod__figure">
-              <img src="img/img-amateur-selfie-stick.jpg" width="360" height="380" alt="" class="monopod__image">
-              <figcaption class="monopod__description">
-                <a href="#" class="monopod__link">Любительская селфи-палка</a>
-                <p class="monopod__price">500 руб.</p>
-              </figcaption>
-            </figure>
-            <div class="monopod__hover">
-                  <a href="#" class="monopod__basket button">В корзину</a>
-                  <a href="#" class="monopod__compare">Добавить к сравнению</a>
-              </div>
-          </li>
-          <li class="monopods__item monopod">
-            <figure class="monopod__figure">
-              <img src="img/img-prof-selfie-stick.jpg" width="360" height="380" alt="" class="monopod__image">
-              <figcaption class="monopod__description">
-                <a href="#" class="monopod__link">Профессиональная селфи-палка</a>
-                <p class="monopod__price">1 500 руб.</p>
-              </figcaption>
-            </figure>
-            <div class="monopod__hover">
-                  <a href="#" class="monopod__basket button">В корзину</a>
-                  <a href="#" class="monopod__compare">Добавить к сравнению</a>
-              </div>
-          </li>
-          <li class="monopods__item monopod">
-            <figure class="monopod__figure">
-              <img src="img/img-unsinkable-selfie-stick.jpg" width="360" height="380" alt="" class="monopod__image">
-              <figcaption class="monopod__description">
-                <a href="#" class="monopod__link">Непотопляемая селфи-палка</a>
-                <p class="monopod__price">2 500 руб.</p>
-              </figcaption>
-            </figure>
-            <div class="monopod__hover">
-                  <a href="#" class="monopod__basket button">В корзину</a>
-                  <a href="#" class="monopod__compare">Добавить к сравнению</a>
-              </div>
-          </li>
-          <li class="monopods__item monopod">
-            <figure class="monopod__figure">
-              <img src="img/img-hand-selfie-stick.jpg" width="360" height="380" alt="" class="monopod__image">
-              <figcaption class="monopod__description">
-                <a href="#" class="monopod__link">Селфи-палка "Следуй за мной"</a>
-                <p class="monopod__price">4 900 руб.</p>
-              </figcaption>
-            </figure>
-            <div class="monopod__hover">
-                  <a href="#" class="monopod__basket button">В корзину</a>
-                  <a href="#" class="monopod__compare">Добавить к сравнению</a>
-              </div>
-          </li>
-        </ul>
-        <div class="sort__pagination pagination">
-          <a href="#" class="pagination__back">Назад</a>
-          <ul class="pagination__list">
-            <li class="pagination__item pagination__item--current"><a>1</a></li>
-            <li class="pagination__item"><a href="#">2</a></li>
-            <li class="pagination__item"><a href="#">3</a></li>
-          </ul>
-          <a href="#" class="pagination__forward">Вперед</a>
-        </div>
-      </section>
-    </div>
+    </section>
+  </div>
   </main>
 
   <footer class="page-footer">

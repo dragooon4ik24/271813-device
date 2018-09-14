@@ -43,10 +43,10 @@
     </nav>
   </header>
 
-  <main class="page-main container">
+  <main class="page-main">
     <h1 class="visually-hidden">Интернет магазин "Device"</h1>
 
-    <section class="popular-goods">
+    <section class="popular-goods container">
       <h2 class="visually-hidden">Популярные товары</h2>
        <ul class="goods">
          <li class="goods__item">
@@ -120,7 +120,7 @@
        </div>
      </section>
 
-     <section class="categories">
+     <section class="categories container">
        <h2 class="visually-hidden">Категории товаров</h2>
        <ul class="categories__list">
          <li class="categories__item">
@@ -145,31 +145,33 @@
      </section>
 
      <section class="services">
-       <h2 class="visually-hidden">Услуги</h2>
-       <div class="services__wrapper">
-         <div class="services__controls">
-             <input class="services__input visually-hidden" type="radio" id="delivery" name="services" checked=""><label for="delivery">Доставка</label>
-             <input class="services__input visually-hidden" type="radio" id="guarantee" name="services"><label for="guarantee">Гарантия</label>
-             <input class="services__input visually-hidden" type="radio" id="credit" name="services"><label for="credit">Кредит</label>
+       <div class="container">
+         <h2 class="visually-hidden">Услуги</h2>
+         <div class="services__wrapper">
+           <div class="services__controls">
+               <input class="services__input visually-hidden" type="radio" id="delivery" name="services" checked=""><label for="delivery">Доставка</label>
+               <input class="services__input visually-hidden" type="radio" id="guarantee" name="services"><label for="guarantee">Гарантия</label>
+               <input class="services__input visually-hidden" type="radio" id="credit" name="services"><label for="credit">Кредит</label>
+           </div>
+           <ul class="services__list">
+             <li class="services__item">
+               <h3 class="services__title">Доставка</h3>
+               <p class="services__description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+             </li>
+             <li class="services__item">
+               <h3 class="services__title">Гарантия</h3>
+               <p class="services__description">Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+             </li>
+             <li class="services__item">
+               <h3 class="services__title">Кредит</h3>
+               <p class="services__description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+             </li>
+           </ul>
          </div>
-         <ul class="services__list">
-           <li class="services__item">
-             <h3 class="services__title">Доставка</h3>
-             <p class="services__description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-           </li>
-           <li class="services__item">
-             <h3 class="services__title">Гарантия</h3>
-             <p class="services__description">Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-           </li>
-           <li class="services__item">
-             <h3 class="services__title">Кредит</h3>
-             <p class="services__description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-           </li>
-         </ul>
        </div>
      </section>
 
-     <section class="brands">
+     <section class="brands container">
        <h2 class="visually-hidden">Бренды</h2>
        <ul class="brands__list">
          <li class="brands__item">
@@ -236,7 +238,7 @@
        </ul>
      </section>
 
-     <section class="information">
+     <section class="information container">
        <div class="information__wrapper">
          <div class="about-us">
            <h2 class="about-us__title">О нас</h2>
