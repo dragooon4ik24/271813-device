@@ -27,14 +27,16 @@
       </div>
       <ul class="navigation-list">
         <li class="navigation-list__catalog navigation-list__item"><a href="#">Каталог товаров</a>
-          <ul class="catalog">
-            <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="catalog.html">Моноподы для селфи</a></li>
-            <li><a href="#">Экшн-камеры</a></li>
-            <li><a href="#">Фитнес-браслеты</a></li>
-            <li><a href="#">Умные часы</a></li>
-            <li><a href="#">Квадрокоптеры</a></li>
-          </ul>
+          <div class="navigation-list__wrapper">
+            <ul class="catalog">
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="catalog.html">Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </div>
         </li>
         <li class="navigation-list__item"><a href="#">Доставка</a></li>
         <li class="navigation-list__item"><a href="#">Гарантия</a></li>
@@ -55,8 +57,8 @@
           </div>
            <div class="goods__wrapper">
              <p class="goods__number">01</p>
-             <h3 class="goods__title">Делай селфи, как Бен Стиллер!</h3>
-             <p class="goods__description">Самая длинная палка для селфи доступна а нашем магазине. Восемь(Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+             <h3 class="goods__title">Делай селфи,<br> как Бен Стиллер!</h3>
+             <p class="goods__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь(Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
              <a class="goods__detailed button" href="#">Подробнее</a>
              <table class="goods__properties table">
                <tr class="table__first-row">
@@ -72,13 +74,13 @@
              </table>
            </div>
          </li>
-         <li class="goods__item">
+         <li class="goods__item" style="display: none">
           <div class="goods__wrapper-image">
             <img class="goods__image" src="img/slider-fitness-bracelet.png" width="345" height="485" alt="Фитнес-браслет">
           </div>
            <div class="goods__wrapper">
              <p class="goods__number">02</p>
-             <h3 class="goods__title">Худеем правильно!</h3>
+             <h3 class="goods__title">Худеем<br> правильно!</h3>
              <p class="goods__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
              <a class="goods__detailed button" href="#">Подробнее</a>
              <table class="goods__properties table">
@@ -91,7 +93,7 @@
                </table>
            </div>
          </li>
-         <li class="goods__item">
+         <li class="goods__item" style="display: none">
           <div class="goods__wrapper-image">
             <img class="goods__image" src="img/slider-quadcopter.png" width="526" height="334" alt="Квадрокоптер">
           </div>
@@ -127,7 +129,7 @@
            <a href="#">Виртуальная реальность</a>
          </li>
          <li class="categories__item">
-           <a href="#">Моноподы для селфи</a>
+           <a href="catalog.html">Моноподы для селфи</a>
          </li>
          <li class="categories__item">
            <a href="#">Экшн-камеры</a>
