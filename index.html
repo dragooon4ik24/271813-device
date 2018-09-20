@@ -10,7 +10,7 @@
 
 <body>
   <header class="page-header container">
-    <nav class="main-navigation container-header">
+    <nav class="main-navigation main-navigation--index container-header">
       <a class="page-header__logo">Device</a>
       <div class="page-header__wrapper">
         <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
@@ -50,7 +50,15 @@
 
     <section class="popular-goods container">
       <h2 class="visually-hidden">Популярные товары</h2>
-       <ul class="goods">
+         <input class="slider-input slider-input__1 visually-hidden" type="radio" id="slide1" name="slides" checked>
+         <input class="slider-input slider-input__2 visually-hidden" type="radio" id="slide2" name="slides">
+         <input class="slider-input slider-input__3 visually-hidden" type="radio" id="slide3" name="slides">
+        <div class="slider-controls">
+          <label class="slider-controls__item slider-controls__item--1" for="slide1">1</label>
+          <label class="slider-controls__item slider-controls__item--2" for="slide2">2</label>
+          <label class="slider-controls__item slider-controls__item--3" for="slide3">3</label>
+        </div>
+        <ul class="goods">
          <li class="goods__item">
           <div class="goods__wrapper-image">
             <img class="goods__image" src="img/slider-selfie-stick.png" width="384" height="486" alt="Селфи-палка">
@@ -115,11 +123,6 @@
            </div>
          </li>
        </ul>
-       <div class="slide-controls">
-         <input class="visually-hidden" type="radio" id="slide1" name="slides" checked>
-         <input class="visually-hidden" type="radio" id="slide2" name="slides">
-         <input class="visually-hidden" type="radio" id="slide3" name="slides">
-       </div>
      </section>
 
      <section class="categories container">

@@ -28,14 +28,16 @@
      </div>
       <ul class="navigation-list">
         <li class="navigation-list__catalog navigation-list__item"><a href="#">Каталог товаров</a>
-          <ul class="catalog">
-            <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="#">Моноподы для селфи</a></li>
-            <li><a href="#">Экшн-камеры</a></li>
-            <li><a href="#">Фитнес-браслеты</a></li>
-            <li><a href="#">Умные часы</a></li>
-            <li><a href="#">Квадрокоптеры</a></li>
-          </ul>
+          <div class="navigation-list__wrapper">
+            <ul class="catalog">
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="#">Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </div>
         </li>
         <li class="navigation-list__item"><a href="#">Доставка</a></li>
         <li class="navigation-list__item"><a href="#">Гарантия</a></li>
@@ -46,12 +48,14 @@
 
   <main class="page-main">
     <div class="container">
-      <h1 class="page-main__title">Моноподы для селфи</h1>
-      <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="#">Каталог товаров</a></li>
-        <li><a>Моноподы для селфи</a></li>
-      </ul>
+      <div class="container-header">
+        <h1 class="page-main__title">Моноподы для селфи</h1>
+        <ul class="page-main__breadcrumbs">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="#">Каталог товаров</a></li>
+          <li><a>Моноподы для селфи</a></li>
+        </ul>
+      </div>
     </div>
 
     <div class="page-main__wrapper">
@@ -74,8 +78,8 @@
                 </li>
               </ul>
               <ul class="sort__up-down">
-                <li><a href="#">Вверх</a></li>
-                <li><a href="#">Вниз</a></li>
+                <li><a class="sort__link sort__link--up" href="#">Вверх</a></li>
+                <li><a class="sort__link sort__link--down" href="#">Вниз</a></li>
               </ul>
             </div>
           </header>
@@ -84,7 +88,7 @@
             <div class="catalog-page__wrapper">
               <aside class="filters">
                 <form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
-                  <fieldset>
+                  <fieldset class="filters__fieldset">
                     <legend>Стоимость</legend>
                     <div class="filters__range range">
                       <input class="range__input visually-hidden" type="range" name="price" id="price-min">
@@ -101,7 +105,7 @@
                       <label class="range__label" for="price-max">до 5000</label>
                     </div>
                   </fieldset>
-                  <fieldset>
+                  <fieldset class="filters__fieldset">
                     <legend>Цвет</legend>
                     <ul class="filters__list-colors">
                       <li>
@@ -126,7 +130,7 @@
                       </li>
                     </ul>
                   </fieldset>
-                  <fieldset>
+                  <fieldset class="filters__fieldset">
                     <legend>Bluetooth</legend>
                     <ul class="filters__list-bluetooth">
                       <li>
@@ -143,11 +147,11 @@
                 </form>
               </aside>
 
-                        <div class="catalog-page__monopods monopods">
+            <div class="catalog-page__monopods monopods">
               <ul class="monopods__list">
                 <li class="monopods__item monopod">
                   <figure class="monopod__figure">
-                    <img src="img/img-amateur-selfie-stick.jpg" width="360" height="380" alt="" class="monopod__image">
+                    <img class="monopod__image" src="img/img-amateur-selfie-stick.jpg" width="360" height="380" alt="">
                     <figcaption class="monopod__description">
                       <a href="#" class="monopod__link">Любительская селфи-палка</a>
                       <p class="monopod__price">500 руб.</p>
@@ -160,7 +164,7 @@
                 </li>
                 <li class="monopods__item monopod">
                   <figure class="monopod__figure">
-                    <img src="img/img-prof-selfie-stick.jpg" width="360" height="380" alt="" class="monopod__image">
+                    <img class="monopod__image" src="img/img-prof-selfie-stick.jpg" width="360" height="380" alt="">
                     <figcaption class="monopod__description">
                       <a href="#" class="monopod__link">Профессиональная селфи-палка</a>
                       <p class="monopod__price">1 500 руб.</p>
@@ -173,7 +177,7 @@
                 </li>
                 <li class="monopods__item monopod">
                   <figure class="monopod__figure">
-                    <img src="img/img-unsinkable-selfie-stick.jpg" width="360" height="380" alt="" class="monopod__image">
+                    <img class="monopod__image" src="img/img-unsinkable-selfie-stick.jpg" width="360" height="380" alt="">
                     <figcaption class="monopod__description">
                       <a href="#" class="monopod__link">Непотопляемая селфи-палка</a>
                       <p class="monopod__price">2 500 руб.</p>
@@ -184,11 +188,11 @@
                         <a href="#" class="monopod__compare">Добавить к сравнению</a>
                     </div>
                 </li>
-                <li class="monopods__item monopod">
+                <li class="monopods__item monopod monopod--new">
                   <figure class="monopod__figure">
-                    <img src="img/img-hand-selfie-stick.jpg" width="360" height="380" alt="" class="monopod__image">
+                    <img class="monopod__image" src="img/img-hand-selfie-stick.jpg" width="360" height="380" alt="">
                     <figcaption class="monopod__description">
-                      <a href="#" class="monopod__link">Селфи-палка "Следуй за мной"</a>
+                      <a href="#" class="monopod__link">Селфи-палка &laquo;Следуй за мной&raquo;</a>
                       <p class="monopod__price">4 900 руб.</p>
                     </figcaption>
                   </figure>
@@ -199,13 +203,13 @@
                 </li>
               </ul>
               <div class="monopods__pagination pagination">
-                <a href="#" class="pagination__back">Назад</a>
+                <a href="#" class=" pagination__button pagination__button--back">Назад</a>
                 <ul class="pagination__list">
                   <li class="pagination__item pagination__item--current"><a>1</a></li>
                   <li class="pagination__item"><a href="#">2</a></li>
                   <li class="pagination__item"><a href="#">3</a></li>
                 </ul>
-                <a href="#" class="pagination__forward">Вперед</a>
+                <a href="#" class="pagination__button pagination__button--forward">Вперед</a>
               </div>
             </div>
         </div>
@@ -237,12 +241,19 @@
       </div>
       <div class="footer-links">
         <ul class="footer-links__socials">
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Twitter</a></li>
+          <li><a class="footer-links__button" href="#"><span class="visually-hidden">Facebook</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="#FFF" d="M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16c8.837 0 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.021v3.444h3.021v3.445h-3.021v8.61H14.02v-8.61H11v-3.445h3.021V9.455c0-1.902 1.353-3.445 3.021-3.445h3.021v3.445z"/></svg>
+          </a></li>
+          <li><a class="footer-links__button" href="#"><span class="visually-hidden">Instagram</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><g fill="#FFF"><path d="M20.916 16a4.938 4.938 0 1 1-9.877 0c0-.394.051-.773.138-1.14h-.897v6.838h11.396V14.86h-.897c.086.367.137.746.137 1.14z"/><path d="M15.978 18.659c1.466 0 2.659-1.193 2.659-2.659s-1.193-2.659-2.659-2.659c-1.466 0-2.659 1.193-2.659 2.659s1.192 2.659 2.659 2.659zM18.637 10.302h3.039v3.039h-3.039z"/><path d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.955 21.698a2.285 2.285 0 0 1-2.279 2.279H10.279A2.285 2.285 0 0 1 8 21.698V10.302a2.286 2.286 0 0 1 2.279-2.279h11.396a2.286 2.286 0 0 1 2.279 2.279v11.396z"/></g></svg>
+          </a></li>
+          <li><a class="footer-links__button" href="#"><span class="visually-hidden">Twitter</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="#FFF" d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.809c-.251 6.516-3.463 10.832-10.992 10.702h-.486c-.447 0-4.543-.443-5.344-1.823 2.479.19 4.247-.406 5.12-1.136-1.048-.289-2.923-.461-3.251-2.848.384.104.618.221 1.299.113-1.307-.824-2.758-1.519-2.679-3.643.311.317 1.164.518 1.46.457-.768-.233-2.149-3.244-.974-4.781 1.984 1.79 4.075 3.482 7.804 3.643.227-2.214 1.24-3.699 3.168-4.325 1.84-.479 3.255.26 3.901 1.138.737-.224 1.453-.466 2.193-.685-.004.833-.569 1.463-.935 1.709.747.165 1.423-.475 1.423-.475-.184.963-1.094 1.725-1.707 1.954z"/></svg>
+          </a></li>
         </ul>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-links__academy">
-          <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип HTML Academy">
+        <a class="footer-links__academy" href="https://htmlacademy.ru/intensive/htmlcss">
+          <span class="visually-hidden">HTML Academy</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09"><path fill="#FFC600" d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/></svg>
         </a>
       </div>
     </div>
