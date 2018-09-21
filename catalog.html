@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Моноподы для селфи</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -89,56 +89,57 @@
               <aside class="filters">
                 <form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
                   <fieldset class="filters__fieldset">
-                    <legend>Стоимость</legend>
+                    <legend class="filters__legend">Стоимость</legend>
                     <div class="filters__range range">
-                      <input class="range__input visually-hidden" type="range" name="price" id="price-min">
-                      <label class="range__lever" for="price-min"></label>
 
-                      <input class="range__input visually-hidden" type="range" name="price" id="price-max">
-                      <label class="range__lever" for="price-max"></label>
+                      <div class="range__controls">
+                        <div class="range__scale">
+                          <div class="range__bar"></div>
+                        </div>
 
-                      <div class="range__scale">
-                        <div class="range__bar"></div>
+                        <div class="range__toggle range__toggle--min"></div>
+                        <div class="range__toggle range__toggle--max"></div>
                       </div>
-
-                      <label class="range__label" for="price-min">от 0</label>
-                      <label class="range__label" for="price-max">до 5000</label>
+                      <div class="range__price-controls">
+                          <label class="range__label" for="price-min">от <input class="range__input" name="min-price" type="text" value="0"></label>
+                          <label class="range__label" for="price-max">до <input class="range__input" name="max-price" type="text" value="5000"></label>
+                      </div>
                     </div>
                   </fieldset>
                   <fieldset class="filters__fieldset">
-                    <legend>Цвет</legend>
+                    <legend class="filters__legend">Цвет</legend>
                     <ul class="filters__list-colors">
                       <li>
-                        <input class="visually-hidden" type="checkbox" name="black" id="color-black" checked>
+                        <input class="filters__checkbox visually-hidden" type="checkbox" name="black" id="color-black" checked>
                         <label for="color-black">Черный</label>
                       </li>
                       <li>
-                        <input class="visually-hidden" type="checkbox" name="white" id="color-white">
+                        <input class="filters__checkbox visually-hidden" type="checkbox" name="white" id="color-white">
                         <label for="color-white">Белый</label>
                       </li>
                       <li>
-                        <input class="visually-hidden" type="checkbox" name="blue" id="color-blue" checked>
+                        <input class="filters__checkbox visually-hidden" type="checkbox" name="blue" id="color-blue" checked>
                         <label for="color-blue">Синий</label>
                       </li>
                       <li>
-                        <input class="visually-hidden" type="checkbox" name="red" id="color-red" checked>
+                        <input class="filters__checkbox visually-hidden" type="checkbox" name="red" id="color-red" checked>
                         <label for="color-red">Красный</label>
                       </li>
                       <li>
-                        <input class="visually-hidden" type="checkbox" name="pink" id="color-pink">
+                        <input class="filters__checkbox visually-hidden" type="checkbox" name="pink" id="color-pink">
                         <label for="color-pink">Розовый</label>
                       </li>
                     </ul>
                   </fieldset>
                   <fieldset class="filters__fieldset">
-                    <legend>Bluetooth</legend>
+                    <legend class="filters__legend">Bluetooth</legend>
                     <ul class="filters__list-bluetooth">
                       <li>
-                        <input class="visually-hidden" type="radio" name="bluetooth" value="have-bluetooth" id="bluetooth-on">
+                        <input class="filters__radio visually-hidden" type="radio" name="bluetooth" value="have-bluetooth" id="bluetooth-on" checked>
                         <label for="bluetooth-on">Есть</label>
                       </li>
                       <li>
-                        <input class="visually-hidden" type="radio" name="bluetooth" value="have-no-bluetooth" id="bluetooth-off">
+                        <input class="filters__radio visually-hidden" type="radio" name="bluetooth" value="have-no-bluetooth" id="bluetooth-off">
                         <label for="bluetooth-off">Нет</label>
                       </li>
                     </ul>
