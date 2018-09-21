@@ -526,7 +526,7 @@ a {
   margin: 0;
   padding: 0;
   margin-bottom: 81px;
-  margin-right: 60px;
+  margin-right: 52px;
 
   list-style: none;
 }
@@ -538,7 +538,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 510px;
+  height: 510px;
 }
 
 .goods__item:first-child,
@@ -564,7 +564,7 @@ a {
 .goods__wrapper {
   position: relative;
 
-  width: 500px;
+  width: 508px;
 }
 
 .goods__wrapper::before {
@@ -582,7 +582,7 @@ a {
 .goods__number {
   position: absolute;
   top: -15px;
-  right: -10px;
+  right: -2px;
 
   margin: 0;
   padding: 0;
@@ -607,7 +607,7 @@ a {
 }
 
 .goods__description {
-  width: 480px;
+  width: 490px;
   margin: 0;
   margin-bottom: 40px;
 
@@ -1049,7 +1049,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 560px;
+  height: 560px;
 }
 
 .about-us {
@@ -1124,10 +1124,12 @@ a {
 
 .about-us__text {
   margin-bottom: 30px;
+  width: 475px;
 }
 
 .about-us__text-more {
   margin-bottom: 66px;
+  width: 475px;
 }
 
 .about-us__companies {
@@ -1160,6 +1162,7 @@ a {
 
 .contacts__text {
   margin-bottom: 40px;
+  width: 560px;
 }
 
 .page-footer {
