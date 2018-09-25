@@ -12,20 +12,20 @@
   <header class="page-header container">
     <nav class="main-navigation container-header">
       <a class="page-header__logo" href="index.html">Device</a>
-     <div class="page-header__wrapper">
+      <div class="page-header__wrapper">
         <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
-         <input class="form-search__input" type="search" name="search" placeholder="Поиск по сайту">
-         <button class="form-search__submit" type="submit">Найти</button>
-       </form>
-       <ul class="user-navigation">
-         <li class="user-navigation__profile"><a href="#">Валентин Петухов</a></li>
-         <li class="user-navigation__logout"><a href="#">Выйти</a></li>
-       </ul>
-       <ul class="user-navigation user-navigation--extra">
-         <li class="user-navigation__compare"><a href="#">Сравнить</a></li>
-         <li class="user-navigation__basket"><a href="#">Корзина</a></li>
-       </ul>
-     </div>
+          <input class="form-search__input" type="search" name="search" placeholder="Поиск по сайту">
+          <button class="form-search__submit" type="submit">Найти</button>
+        </form>
+        <ul class="user-navigation">
+          <li class="user-navigation__profile"><a href="#">Валентин Петухов</a></li>
+          <li class="user-navigation__logout"><a href="#">Выйти</a></li>
+        </ul>
+        <ul class="user-navigation user-navigation--extra">
+          <li class="user-navigation__compare"><a href="#">Сравнить</a></li>
+          <li class="user-navigation__basket"><a href="#">Корзина</a></li>
+        </ul>
+      </div>
       <ul class="navigation-list">
         <li class="navigation-list__catalog navigation-list__item"><a href="#">Каталог товаров</a>
           <div class="navigation-list__wrapper">
@@ -45,7 +45,6 @@
       </ul>
     </nav>
   </header>
-
   <main class="page-main">
     <div class="container">
       <div class="container-header">
@@ -57,97 +56,94 @@
         </ul>
       </div>
     </div>
-
     <div class="page-main__wrapper">
-        <section class="catalog-page">
-
-          <header class="catalog-page__header">
-            <h2 class="filter">Фильтр:</h2>
-            <div class="sort">
-              <h2 class="sort__title">Сортировка:</h2>
-
-              <ul class="sort__list">
-                <li class="sort__item sort__item--current">
-                  <a href="#">По цене</a>
-                </li>
-                <li class="sort__item">
-                  <a href="#">По типу</a>
-                </li>
-                <li class="sort__item">
-                  <a href="#">По популярности</a>
-                </li>
-              </ul>
-              <ul class="sort__up-down">
-                <li><a class="sort__link sort__link--up" href="#">Вверх</a></li>
-                <li><a class="sort__link sort__link--down" href="#">Вниз</a></li>
-              </ul>
-            </div>
-          </header>
-
-          <div class="catalog-page__body">
-            <div class="catalog-page__wrapper">
-              <aside class="filters">
-                <form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
-                  <fieldset class="filters__fieldset">
-                    <legend class="filters__legend">Стоимость</legend>
-                    <div class="filters__range range">
-
-                      <div class="range__controls">
-                        <div class="range__scale">
-                          <div class="range__bar"></div>
-                        </div>
-
-                        <div class="range__toggle range__toggle--min"></div>
-                        <div class="range__toggle range__toggle--max"></div>
+      <section class="catalog-page">
+        <header class="catalog-page__header">
+          <h2 class="filter">Фильтр:</h2>
+          <div class="sort">
+            <h2 class="sort__title">Сортировка:</h2>
+            <ul class="sort__list">
+              <li class="sort__item sort__item--current">
+                <a href="#">По цене</a>
+              </li>
+              <li class="sort__item">
+                <a href="#">По типу</a>
+              </li>
+              <li class="sort__item">
+                <a href="#">По популярности</a>
+              </li>
+            </ul>
+            <ul class="sort__up-down">
+              <li><a class="sort__link sort__link--up" href="#">Вверх</a></li>
+              <li><a class="sort__link sort__link--down" href="#">Вниз</a></li>
+            </ul>
+          </div>
+        </header>
+        <div class="catalog-page__body">
+          <div class="catalog-page__wrapper">
+            <aside class="filters">
+              <form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
+                <fieldset class="filters__fieldset">
+                  <legend class="filters__legend">Стоимость</legend>
+                  <div class="filters__range range">
+                    <div class="range__controls">
+                      <div class="range__scale">
+                        <div class="range__bar"></div>
                       </div>
-                      <div class="range__price-controls">
-                          <label class="range__label" for="price-min">от <input class="range__input" name="min-price" type="text" id="price-min" value="0"></label>
-                          <label class="range__label" for="price-max">до <input class="range__input" name="max-price" type="text" id=price-max value="5000"></label>
-                      </div>
+                      <div class="range__toggle range__toggle--min"></div>
+                      <div class="range__toggle range__toggle--max"></div>
                     </div>
-                  </fieldset>
-                  <fieldset class="filters__fieldset">
-                    <legend class="filters__legend">Цвет</legend>
-                    <ul class="filters__list-colors">
-                      <li>
-                        <input class="filters__checkbox visually-hidden" type="checkbox" name="black" id="color-black" checked>
-                        <label for="color-black">Черный</label>
-                      </li>
-                      <li>
-                        <input class="filters__checkbox visually-hidden" type="checkbox" name="white" id="color-white">
-                        <label for="color-white">Белый</label>
-                      </li>
-                      <li>
-                        <input class="filters__checkbox visually-hidden" type="checkbox" name="blue" id="color-blue" checked>
-                        <label for="color-blue">Синий</label>
-                      </li>
-                      <li>
-                        <input class="filters__checkbox visually-hidden" type="checkbox" name="red" id="color-red" checked>
-                        <label for="color-red">Красный</label>
-                      </li>
-                      <li>
-                        <input class="filters__checkbox visually-hidden" type="checkbox" name="pink" id="color-pink">
-                        <label for="color-pink">Розовый</label>
-                      </li>
-                    </ul>
-                  </fieldset>
-                  <fieldset class="filters__fieldset">
-                    <legend class="filters__legend">Bluetooth</legend>
-                    <ul class="filters__list-bluetooth">
-                      <li>
-                        <input class="filters__radio visually-hidden" type="radio" name="bluetooth" value="have-bluetooth" id="bluetooth-on" checked>
-                        <label for="bluetooth-on">Есть</label>
-                      </li>
-                      <li>
-                        <input class="filters__radio visually-hidden" type="radio" name="bluetooth" value="have-no-bluetooth" id="bluetooth-off">
-                        <label for="bluetooth-off">Нет</label>
-                      </li>
-                    </ul>
-                  </fieldset>
-                  <button class="filters__submit button" type="submit">Показать</button>
-                </form>
-              </aside>
-
+                    <div class="range__price-controls">
+                      <label class="range__label" for="price-min">от
+                        <input class="range__input" name="min-price" type="text" id="price-min" value="0">
+                      </label>
+                      <label class="range__label" for="price-max">до
+                        <input class="range__input" name="max-price" type="text" id=price-max value="5000">
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="filters__fieldset">
+                  <legend class="filters__legend">Цвет</legend>
+                  <ul class="filters__list-colors">
+                    <li>
+                      <input class="filters__checkbox visually-hidden" type="checkbox" name="black" id="color-black" checked>
+                      <label for="color-black">Черный</label>
+                    </li>
+                    <li>
+                      <input class="filters__checkbox visually-hidden" type="checkbox" name="white" id="color-white">
+                      <label for="color-white">Белый</label>
+                    </li>
+                    <li>
+                      <input class="filters__checkbox visually-hidden" type="checkbox" name="blue" id="color-blue" checked>
+                      <label for="color-blue">Синий</label>
+                    </li>
+                    <li>
+                      <input class="filters__checkbox visually-hidden" type="checkbox" name="red" id="color-red" checked>
+                      <label for="color-red">Красный</label>
+                    </li>
+                    <li>
+                      <input class="filters__checkbox visually-hidden" type="checkbox" name="pink" id="color-pink">
+                      <label for="color-pink">Розовый</label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset class="filters__fieldset">
+                  <legend class="filters__legend">Bluetooth</legend>
+                  <ul class="filters__list-bluetooth">
+                    <li>
+                      <input class="filters__radio visually-hidden" type="radio" name="bluetooth" value="have-bluetooth" id="bluetooth-on" checked>
+                      <label for="bluetooth-on">Есть</label>
+                    </li>
+                    <li>
+                      <input class="filters__radio visually-hidden" type="radio" name="bluetooth" value="have-no-bluetooth" id="bluetooth-off">
+                      <label for="bluetooth-off">Нет</label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <button class="filters__submit button" type="submit">Показать</button>
+              </form>
+            </aside>
             <div class="catalog-page__monopods monopods">
               <ul class="monopods__list">
                 <li class="monopods__item monopod">
@@ -159,9 +155,9 @@
                     </figcaption>
                   </figure>
                   <div class="monopod__hover">
-                        <a href="#" class="monopod__basket button">В корзину</a>
-                        <a href="#" class="monopod__compare">Добавить к сравнению</a>
-                    </div>
+                    <a href="#" class="monopod__basket button">В корзину</a>
+                    <a href="#" class="monopod__compare">Добавить к сравнению</a>
+                  </div>
                 </li>
                 <li class="monopods__item monopod">
                   <figure class="monopod__figure">
@@ -172,9 +168,9 @@
                     </figcaption>
                   </figure>
                   <div class="monopod__hover">
-                        <a href="#" class="monopod__basket button">В корзину</a>
-                        <a href="#" class="monopod__compare">Добавить к сравнению</a>
-                    </div>
+                    <a href="#" class="monopod__basket button">В корзину</a>
+                    <a href="#" class="monopod__compare">Добавить к сравнению</a>
+                  </div>
                 </li>
                 <li class="monopods__item monopod">
                   <figure class="monopod__figure">
@@ -185,9 +181,9 @@
                     </figcaption>
                   </figure>
                   <div class="monopod__hover">
-                        <a href="#" class="monopod__basket button">В корзину</a>
-                        <a href="#" class="monopod__compare">Добавить к сравнению</a>
-                    </div>
+                    <a href="#" class="monopod__basket button">В корзину</a>
+                    <a href="#" class="monopod__compare">Добавить к сравнению</a>
+                  </div>
                 </li>
                 <li class="monopods__item monopod monopod--new">
                   <figure class="monopod__figure">
@@ -198,9 +194,9 @@
                     </figcaption>
                   </figure>
                   <div class="monopod__hover">
-                        <a href="#" class="monopod__basket button">В корзину</a>
-                        <a href="#" class="monopod__compare">Добавить к сравнению</a>
-                    </div>
+                    <a href="#" class="monopod__basket button">В корзину</a>
+                    <a href="#" class="monopod__compare">Добавить к сравнению</a>
+                  </div>
                 </li>
               </ul>
               <div class="monopods__pagination pagination">
@@ -215,10 +211,9 @@
             </div>
           </div>
         </div>
-    </section>
-  </div>
+      </section>
+    </div>
   </main>
-
   <footer class="page-footer">
     <div class="container">
       <div class="footer-navigation">
@@ -239,15 +234,15 @@
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <a class="footer-phone" href="tel:+74954959595">Тел.: +7(495)495-95-95</a>
+        <a class="footer-phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       </div>
       <div class="footer-links">
         <ul class="footer-links__socials">
           <li><a class="footer-links__button" href="#"><span class="visually-hidden">Facebook</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="#FFF" d="M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16c8.837 0 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.021v3.444h3.021v3.445h-3.021v8.61H14.02v-8.61H11v-3.445h3.021V9.455c0-1.902 1.353-3.445 3.021-3.445h3.021v3.445z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="#FFF" d="M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16c8.837 0 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.021v3.444h3.021v3.445h-3.021v8.61H14.02v-8.61H11v-3.445h3.021V9.455c0-1.902 1.353-3.445 3.021-3.445h3.021v3.445z"/></svg>
           </a></li>
           <li><a class="footer-links__button" href="#"><span class="visually-hidden">Instagram</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><g fill="#FFF"><path d="M20.916 16a4.938 4.938 0 1 1-9.877 0c0-.394.051-.773.138-1.14h-.897v6.838h11.396V14.86h-.897c.086.367.137.746.137 1.14z"/><path d="M15.978 18.659c1.466 0 2.659-1.193 2.659-2.659s-1.193-2.659-2.659-2.659c-1.466 0-2.659 1.193-2.659 2.659s1.192 2.659 2.659 2.659zM18.637 10.302h3.039v3.039h-3.039z"/><path d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.955 21.698a2.285 2.285 0 0 1-2.279 2.279H10.279A2.285 2.285 0 0 1 8 21.698V10.302a2.286 2.286 0 0 1 2.279-2.279h11.396a2.286 2.286 0 0 1 2.279 2.279v11.396z"/></g></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><g fill="#FFF"><path d="M20.916 16a4.938 4.938 0 1 1-9.877 0c0-.394.051-.773.138-1.14h-.897v6.838h11.396V14.86h-.897c.086.367.137.746.137 1.14z"/><path d="M15.978 18.659c1.466 0 2.659-1.193 2.659-2.659s-1.193-2.659-2.659-2.659c-1.466 0-2.659 1.193-2.659 2.659s1.192 2.659 2.659 2.659zM18.637 10.302h3.039v3.039h-3.039z"/><path d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.955 21.698a2.285 2.285 0 0 1-2.279 2.279H10.279A2.285 2.285 0 0 1 8 21.698V10.302a2.286 2.286 0 0 1 2.279-2.279h11.396a2.286 2.286 0 0 1 2.279 2.279v11.396z"/></g></svg>
           </a></li>
           <li><a class="footer-links__button" href="#"><span class="visually-hidden">Twitter</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="#FFF" d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.809c-.251 6.516-3.463 10.832-10.992 10.702h-.486c-.447 0-4.543-.443-5.344-1.823 2.479.19 4.247-.406 5.12-1.136-1.048-.289-2.923-.461-3.251-2.848.384.104.618.221 1.299.113-1.307-.824-2.758-1.519-2.679-3.643.311.317 1.164.518 1.46.457-.768-.233-2.149-3.244-.974-4.781 1.984 1.79 4.075 3.482 7.804 3.643.227-2.214 1.24-3.699 3.168-4.325 1.84-.479 3.255.26 3.901 1.138.737-.224 1.453-.466 2.193-.685-.004.833-.569 1.463-.935 1.709.747.165 1.423-.475 1.423-.475-.184.963-1.094 1.725-1.707 1.954z"/></svg>
@@ -255,10 +250,11 @@
         </ul>
         <a class="footer-links__academy" href="https://htmlacademy.ru/intensive/htmlcss">
           <span class="visually-hidden">HTML Academy</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09"><path fill="#FFC600" d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09"><path fill="#FFC600" d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/></svg>
         </a>
       </div>
     </div>
   </footer>
 </body>
+
 </html>
